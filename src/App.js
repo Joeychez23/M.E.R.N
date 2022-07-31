@@ -35,7 +35,7 @@ function App() {
       <button onClick={() => setCounter((prevCount) => prevCount -1)}>-</button>
       <h1>{counter}</h1>
       <button onClick={() => setCounter((prevCount) => prevCount +1)}>+</button>
-      <div className= 'data'></div>
+      <div class="data"></div>
 
     </div>
   );
