@@ -30,8 +30,8 @@ function App() {
   
   //data = getData();
 
-  const response = await fetch('/books');
-  const val = await response.json();
+  const response = fetch('/books');
+  const val = response.json();
   console.log(val);
 
 
