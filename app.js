@@ -51,8 +51,8 @@ async function connect() {
     let titleCheck = 0;
     console.log('books');
     const newbook = new books({
-      Title: 'Greer',
-      Author: 'Joseph Sanchez'
+      Author: 'Joseph Sanchez',
+      Title: 'Greer'
     })
   
     books.find((err, foundItem) => {
@@ -115,10 +115,6 @@ app.listen(port, (err) => {
 })
 
 
-books.find((err, foundItem) => {
-    if(err) {
-      console.log(err);
-    } else {console.log(foundItem)}})
 
 
 
