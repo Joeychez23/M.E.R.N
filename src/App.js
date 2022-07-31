@@ -1,7 +1,10 @@
 //import logo from './logo.svg';
 import { useState, useEffect} from 'react';
 import './App.css';
-const data = document.querySelector('.data');
+let title
+let author
+
+let indexData
 
 
 function App() {
@@ -16,19 +19,14 @@ function App() {
   async function getData() {
     const response = await fetch('/books');
     const val = await response.json();
-    console.log(val);
+    console.log(val.length);
+    indexData = val.length
+    
 
 
     for(item of val) {
-      const title = document.createElement('div');
-      const author = document.createElement('div');
-      author.setAttribute("style", "margin-bottom: 20px");
-      title.textContent = `Title: ${item.Title}`;
-      author.textContent = `Author: ${item.Author}`;
-
-      data.append(title, author);
-
-
+      title = item.Title;
+      author = item.Author;
   }
 
 
