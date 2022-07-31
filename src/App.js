@@ -14,15 +14,14 @@ async function getData() {
 
 
 function App() {
-  const [counter, setCounter] = useState(0);
   getData();
   async function getData() {
     const response = await fetch('/books');
     const val = await response.json();
     console.log(val);
   }
-
-
+  const [counter, setCounter] = useState(0);
+  
   useEffect(() => {
     setCounter(100);
   }, [])
