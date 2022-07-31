@@ -48,11 +48,13 @@ async function connect() {
 
 
   // Delete Function
+/*
 books.findOneAndRemove({Title: 'Greer'}, (error, deleted) => {
     if (!error) {
       console.log(deleted);
     }
 })
+*/
 
 
 
