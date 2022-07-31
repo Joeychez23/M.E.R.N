@@ -68,6 +68,7 @@ app.listen(port, (err) => {
 
 app.get('/books', function(req, res) {
     let titleCheck = 0;
+    console.log('books');
     const newbook = new books({
       Title: 'Greer',
       Author: 'Joseph Sanchez'
