@@ -15,7 +15,7 @@ async function App() {
   }, []);
 
 
-  getData();
+  //getData();
 
   /*
   
