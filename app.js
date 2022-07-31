@@ -19,10 +19,10 @@ const uri = `mongodb+srv://mydb:testval@Cluster0.haknbyf.mongodb.net/bookstore?r
 
 
 
-app.use(express.json({limit: '1mb'}));
-app.use(bodyParser.urlencoded({extended: false}));
-app.use(bodyParser.json());
-app.set('view engine', 'ejs');
+//app.use(express.json({limit: '1mb'}));
+//app.use(bodyParser.urlencoded({extended: false}));
+//app.use(bodyParser.json());
+//app.set('view engine', 'ejs');
 console.log("START");
 
 
