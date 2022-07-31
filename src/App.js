@@ -15,16 +15,19 @@ function App() {
   }, []);
 
 
-  getData();
+  //getData();
   async function getData() {
     const response = await fetch('/books');
     const val = await response.json();
     //console.log(val.length);
-    data = val;
-    indexData = val.length;
+    return val;
+    //indexData = val.length;
   
   }
+  data = await getData();
+
   console.log(data);
+
 
   return (
     <div className="App">
