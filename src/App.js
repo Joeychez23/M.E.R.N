@@ -40,7 +40,7 @@ function App() {
     <div className="App">
       <>
         {
-          <div class='container'>
+          <div class='container-fluid'>
             {books.map(book => (
               <ul class= "data" key= {book.id}>
                 <li>Title: {book.Title}</li>
