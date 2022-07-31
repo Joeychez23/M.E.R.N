@@ -38,14 +38,14 @@ function App() {
       <button onClick={() => setCounter((prevCount) => prevCount +1)}>+</button>
       <>
         {
-          <ul class= "data">
+          <div class= "data">
             {books.map(book => (
-              <li key= {book.id}>
-                Title: {book.Title}
-                Author: {book.Author}
-              </li>
+              <ul key= {book.id}>
+                <li>Title: {book.Title}</li>
+                <li>Author: {book.Author}</li>
+              </ul>
             ))}
-          </ul>
+          </div>
         }
 
 
