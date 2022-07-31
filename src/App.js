@@ -3,7 +3,7 @@ import { useState, useEffect} from 'react';
 import './App.css';
 
 
-
+/*
 getData();
 async function getData() {
   const response = await fetch('/books');
@@ -19,7 +19,7 @@ async function getData() {
 
       //data.append(title, author);
     }
-}
+}*/
 
 
 
@@ -35,7 +35,6 @@ function App() {
       <button onClick={() => setCounter((prevCount) => prevCount -1)}>-</button>
       <h1>{counter}</h1>
       <button onClick={() => setCounter((prevCount) => prevCount +1)}>+</button>
-      <div class="data"></div>
 
     </div>
   );
