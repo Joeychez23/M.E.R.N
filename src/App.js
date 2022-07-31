@@ -7,7 +7,7 @@ let indexData
 let data
 
 
-async function App() {
+function App() {
   const [counter, setCounter] = useState(0);
   
   useEffect(() => {
