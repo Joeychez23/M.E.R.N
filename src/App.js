@@ -19,7 +19,7 @@ function App() {
   async function getData() {
     const response = await fetch('/books');
     const val = await response.json();
-    console.log(val.length);
+    //console.log(val.length);
     data = val;
     indexData = val.length;
   
