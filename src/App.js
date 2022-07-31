@@ -11,28 +11,22 @@ function App() {
   const [counter, setCounter] = useState(0);
   
   useEffect(() => {
+    async function getData() {
+      const response = await fetch('/books');
+      const val = await response.json();  
+      data = val;
+    }
+    getData();
     setCounter(100);
   }, []);
 
 
   //getData();
+  
 
-  /*
-  
-  async function getData() {
-    const response = await fetch('/books');
-    const val = await response.json();
-    //console.log(val.length);
-    return data = val;
-    //indexData = val.length;
-  
-  }*/
-  
-  //data = getData();
-
-  const response = fetch('/books');
-  const val = response.json();
-  console.log(val);
+  //const response = fetch('/books');
+  //const val = response.json();
+  console.log(data);
 
 
   return (
