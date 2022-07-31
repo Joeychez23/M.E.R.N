@@ -24,7 +24,7 @@ function App() {
     //indexData = val.length;
   
   }
-  data = await getData();
+  data = getData();
 
   console.log(data);
 
