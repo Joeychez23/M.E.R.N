@@ -1,10 +1,10 @@
 //import logo from './logo.svg';
 import { useState, useEffect} from 'react';
 import './App.css';
-let title
-let author
 
 let indexData
+
+let data
 
 
 function App() {
@@ -20,10 +20,11 @@ function App() {
     const response = await fetch('/books');
     const val = await response.json();
     console.log(val.length);
+    data = val;
     indexData = val.length;
   
   }
-  //getData();
+  console.log(data);
 
   return (
     <div className="App">
