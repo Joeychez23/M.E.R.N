@@ -20,17 +20,8 @@ function App() {
     const response = await fetch('/books');
     const val = await response.json();
     console.log(val.length);
-    indexData = val.length
-    
-
-
-    for(item of val) {
-      title = item.Title;
-      author = item.Author;
-  }
-
-
-
+    indexData = val.length;
+  
   }
   //getData();
 
@@ -39,7 +30,7 @@ function App() {
       <button onClick={() => setCounter((prevCount) => prevCount -1)}>-</button>
       <h1>{counter}</h1>
       <button onClick={() => setCounter((prevCount) => prevCount +1)}>+</button>
-      <div class='data'></div>
+      <div className="data"></div>
 
     </div>
   );
