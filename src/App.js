@@ -2,23 +2,13 @@
 import { useState, useEffect} from 'react';
 import './App.css';
 
-/*
-async function getData() {
-    const response = await fetch('/books');
-    const val = await response.json();
-    console.log(val);
-}
-*/
-
-//getData();
-
 
 function App() {
   const [counter, setCounter] = useState(0);
   
   useEffect(() => {
     setCounter(100);
-  }, [])
+  }, []);
 
 
   async function getData() {
@@ -27,7 +17,7 @@ function App() {
     console.log(val);
   }
   getData();
-  
+
   return (
     <div className="App">
       <button onClick={() => setCounter((prevCount) => prevCount -1)}>-</button>
