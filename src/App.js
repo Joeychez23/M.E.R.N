@@ -9,12 +9,14 @@ let data
 
 function App() {
   const [counter, setCounter] = useState(0);
+  const [books, setBook] = useState([]);
   
   useEffect(() => {
     async function getData() {
       const response = await fetch('/books');
       const val = await response.json();  
       data = val;
+      setBook(val);
     }
     getData();
     setCounter(100);
@@ -26,7 +28,7 @@ function App() {
 
   //const response = fetch('/books');
   //const val = response.json();
-  console.log(data);
+  //console.log(data);
 
 
   return (
@@ -34,7 +36,17 @@ function App() {
       <button onClick={() => setCounter((prevCount) => prevCount -1)}>-</button>
       <h1>{counter}</h1>
       <button onClick={() => setCounter((prevCount) => prevCount +1)}>+</button>
-      <div className="data"></div>
+      <>
+        {
+          <ul>
+            {books.map(book => (
+              <li key={book.title}>{book.author}</li>
+            ))}
+          </ul>
+        }
+
+
+      </>
 
     </div>
   );
