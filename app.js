@@ -45,31 +45,9 @@ async function connect() {
 
 
 
-if (process.env.NODE_ENV === "production") {
-    app.use(express.static('build'));
-    app.get('*', (req, res) => {
-        req.sendFile(path.resolve(__dirname, 'build', 'index.html'));
-    })
-}
 
 
-
-app.listen(port, (err) => {
-    if (err) return console.log(err);
-    console.log(`Server running on ${port}`);
-})
-
-
-books.find((err, foundItem) => {
-    if(err) {
-      console.log(err);
-    } else {console.log(foundItem)}})
-
-
-
-
-
-app.get('/books', function(req, res) {
+  app.get('/books', function(req, res) {
     let titleCheck = 0;
     console.log('books');
     const newbook = new books({
@@ -111,6 +89,39 @@ app.get('/books', function(req, res) {
   
     
   })
+
+
+
+
+
+
+
+
+
+
+
+if (process.env.NODE_ENV === "production") {
+    app.use(express.static('build'));
+    app.get('*', (req, res) => {
+        req.sendFile(path.resolve(__dirname, 'build', 'index.html'));
+    })
+}
+
+
+
+app.listen(port, (err) => {
+    if (err) return console.log(err);
+    console.log(`Server running on ${port}`);
+})
+
+
+books.find((err, foundItem) => {
+    if(err) {
+      console.log(err);
+    } else {console.log(foundItem)}})
+
+
+
   
   
   

@@ -27,6 +27,7 @@ function App() {
     console.log(val);
   }
   getData();
+  
   return (
     <div className="App">
       <button onClick={() => setCounter((prevCount) => prevCount -1)}>-</button>
