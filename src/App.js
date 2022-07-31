@@ -3,12 +3,13 @@ import { useState, useEffect} from 'react';
 import './App.css';
 
 
-/*
+
 getData();
 async function getData() {
   const response = await fetch('/books');
   const val = await response.json();
   console.log(val);
+  /*
 
   for(item of val) {
       //const title = document.createElement('div');
@@ -19,7 +20,8 @@ async function getData() {
 
       //data.append(title, author);
     }
-}*/
+    */
+}
 
 
 
