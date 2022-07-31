@@ -4,10 +4,7 @@ import './App.css';
 
 
 
-function App() {
-  const [counter, setCounter] = useState(0);
-
-  getData();
+getData();
   async function getData() {
     const response = await fetch('/books');
     const val = await response.json();
@@ -25,6 +22,11 @@ function App() {
 
     }
 }
+
+
+
+function App() {
+  const [counter, setCounter] = useState(0);
 
 
   useEffect(() => {
