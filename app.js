@@ -47,7 +47,16 @@ async function connect() {
 
 
 
-  app.get('/books', function(req, res) {
+  // Delete Function
+books.findOneAndRemove({Title: 'Greer'}, (error, deleted) => {
+    if (!error) {
+      console.log(deleted);
+    }
+})
+
+
+
+app.get('/books', function(req, res) {
     let titleCheck = 0;
     console.log('books');
     const newbook = new books({
@@ -88,7 +97,7 @@ async function connect() {
   
   
     
-  })
+})
 
 
 
