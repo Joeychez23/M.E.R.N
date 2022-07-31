@@ -10,7 +10,7 @@ async function getData() {
 }
 */
 
-getData();
+//getData();
 
 
 function App() {
