@@ -7,7 +7,7 @@ let indexData
 let data
 
 
-function App() {
+async function App() {
   const [counter, setCounter] = useState(0);
   
   useEffect(() => {
@@ -16,6 +16,8 @@ function App() {
 
 
   getData();
+
+  /*
   
   async function getData() {
     const response = await fetch('/books');
@@ -24,11 +26,13 @@ function App() {
     return data = val;
     //indexData = val.length;
   
-  }
-
-  console.log(data)
+  }*/
   
   //data = getData();
+
+  const response = await fetch('/books');
+  const val = await response.json();
+  console.log(val);
 
 
   return (
