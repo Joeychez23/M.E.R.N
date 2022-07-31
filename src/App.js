@@ -1,18 +1,16 @@
 //import logo from './logo.svg';
 import { useState, useEffect} from 'react';
 import './App.css';
-const data = require('./data.js');
 
-console.log(data);
 
-/*
-getData();
 async function getData() {
-  const response = await fetch('/books');
-  const val = await response.json();
-  console.log(val);
-}*/
+    const response = await fetch('/books');
+    const val = await response.json();
+    console.log(val);
+}
 
+
+getData();
 
 
 function App() {
