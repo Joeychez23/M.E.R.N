@@ -40,7 +40,10 @@ function App() {
         {
           <ul>
             {books.map(book => (
-              <li key={book.Title}>{book.Author}</li>
+              <li key={book.Title}>
+                Title: {book.Title}
+                Author{book.Author}
+              </li>
             ))}
           </ul>
         }
