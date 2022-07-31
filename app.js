@@ -60,7 +60,10 @@ app.listen(port, (err) => {
 })
 
 
-
+books.find((err, foundItem) => {
+    if(err) {
+      console.log(err);
+    } else {console.log(foundItem)}})
 
 
 
