@@ -16,6 +16,7 @@ function App() {
 
 
   //getData();
+  /*
   async function getData() {
     const response = await fetch('/books');
     const val = await response.json();
@@ -24,6 +25,7 @@ function App() {
     //indexData = val.length;
   
   }
+  */
   //data = getData();
   const response = await fetch('/books');
   const data = await response.json();
