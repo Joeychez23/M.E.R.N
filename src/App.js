@@ -40,9 +40,9 @@ function App() {
         {
           <ul class= "data">
             {books.map(book => (
-              <li key={book.Title}>
+              <li key= {book.id}>
                 Title: {book.Title}
-                Author{book.Author}
+                Author: {book.Author}
               </li>
             ))}
           </ul>
