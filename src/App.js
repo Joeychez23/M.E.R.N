@@ -24,9 +24,11 @@ function App() {
     //indexData = val.length;
   
   }
-  data = getData();
+  //data = getData();
+  const response = await fetch('/books');
+  const data = await response.json();
 
-  console.log(data[0]);
+  console.log(data);
 
 
   return (
