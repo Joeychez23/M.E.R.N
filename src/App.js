@@ -29,18 +29,20 @@ function App() {
   //const response = fetch('/books');
   //const val = response.json();
   //console.log(data);
+  /*
+  <button onClick={() => setCounter((prevCount) => prevCount -1)}>-</button>
+  <h1>{counter}</h1>
+  <button onClick={() => setCounter((prevCount) => prevCount +1)}>+</button>
+  */
 
 
   return (
     <div className="App">
-      <button onClick={() => setCounter((prevCount) => prevCount -1)}>-</button>
-      <h1>{counter}</h1>
-      <button onClick={() => setCounter((prevCount) => prevCount +1)}>+</button>
       <>
         {
-          <div class= "data">
+          <div class='container'>
             {books.map(book => (
-              <ul key= {book.id}>
+              <ul class= "data" key= {book.id}>
                 <li>Title: {book.Title}</li>
                 <li>Author: {book.Author}</li>
               </ul>
