@@ -26,7 +26,7 @@ function App() {
   }
   data = getData();
 
-  console.log(data[2]);
+  console.log(data);
 
 
   return (
