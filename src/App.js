@@ -15,22 +15,20 @@ function App() {
   }, []);
 
 
-  //getData();
-  /*
+  getData();
+  
   async function getData() {
     const response = await fetch('/books');
     const val = await response.json();
     //console.log(val.length);
-    return val;
+    return data = val;
     //indexData = val.length;
   
   }
-  */
-  //data = getData();
-  const response = await fetch('/books');
-  const data = await response.json();
 
-  console.log(data);
+  console.log(data)
+  
+  //data = getData();
 
 
   return (
