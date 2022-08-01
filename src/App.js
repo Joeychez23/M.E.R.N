@@ -9,14 +9,14 @@ let data
 
 function App() {
   const [counter, setCounter] = useState(0);
-  const [books, setBook] = useState([]);
+  const [books, setBooks] = useState([]);
   
   useEffect(() => {
     async function getData() {
       const response = await fetch('/books');
       const val = await response.json();  
-      data = val;
-      setBook(val);
+      //data = val;
+      setBooks(val);
     }
     getData();
     setCounter(100);
@@ -25,7 +25,7 @@ function App() {
 
   //getData();
   
-
+  console.log(books);
   //const response = fetch('/books');
   //const val = response.json();
   //console.log(data);
