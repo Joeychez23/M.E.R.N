@@ -42,3 +42,7 @@
 .data {
   list-style-type: none;
 }
+
+.dataBox {
+  margin-top: 60px;
+}

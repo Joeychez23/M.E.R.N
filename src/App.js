@@ -41,7 +41,7 @@ function App() {
       <h1>Mongo, Express, React, Node (M.E.R.N) test</h1>
       <>
         {
-          <div class='container-fluid'>
+          <div class='container-fluid dataBox'>
             {books.map(book => (
 
               <ul class= "data" key= {book.id}>
