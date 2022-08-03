@@ -41,9 +41,10 @@
 
 .data {
   list-style-type: none;
+  color: white;
 }
 
-#dataBox {
+.title {
   margin-top: 120px;
   color: white;
 }
