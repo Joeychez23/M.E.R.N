@@ -38,7 +38,9 @@ function App() {
 
   return (
     <div className="App">
-      <h1 class="title">Mongo, Express, React, Node (M.E.R.N) test</h1>
+      <div>
+        <h1 class="title">Mongo, Express, React, Node (M.E.R.N) test</h1>
+      </div>
       <>
         {
           <div class='container-fluid' id="data">
