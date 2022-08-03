@@ -40,7 +40,7 @@ function App() {
     <div className="App">
       <>
         {
-          <div /*class='container-fluid'*/>
+          <div class='container-fluid'>
             <h1 class='title'>Mongo, Express, React, Node (M.E.R.N) test</h1>
             {books.map(book => (
 
