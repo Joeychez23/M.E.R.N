@@ -75,6 +75,7 @@ function App() {
 
 
       </>
+      <script src="webNav.js"></script>
 
     </div>
   );
