@@ -44,8 +44,15 @@
   color: white;
 }
 
+/*
 .title {
   position: relative;
   top: 200px;
+  color: white;
+}
+*/
+#data {
+  position: relative;
+  top: 80px;
   color: white;
 }
