@@ -41,9 +41,7 @@ function App() {
       <>
         {
           <div class='container-fluid' id="data">
-            <div>
-              <h1 class="title">Mongo, Express, React, Node (M.E.R.N) test</h1>
-            </div>
+            <h1 class="title">Mongo, Express, React, Node (M.E.R.N) test</h1>
             {books.map(book => (
 
               <ul class= "data" key= {book.id}>
