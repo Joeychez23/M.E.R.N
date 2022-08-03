@@ -43,7 +43,7 @@
   list-style-type: none;
   color: white;
   margin-top: 80px;
-  color: white;
+
 }
 
 
@@ -51,6 +51,7 @@
   position: relative;
   top: 80px;
   text-decoration: underline;
+  color: white
 }
 
 
