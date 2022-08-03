@@ -44,14 +44,13 @@
   color: white;
 }
 
-/*
+
 .title {
-  position: relative;
-  top: 200px;
-  color: white;
+  text-decoration: underline;
 }
-*/
-.title {
+
+#data {
+  text-decoration: underline;
   position: relative;
   top: 80px;
   color: white;
